@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 分组选择器 */
+    .box1 div,.box1 p{
+        color: red;
+    }
+    /* 多条件选择器 */
+    .box2 div.abc.def{
+        color: blue;
+    }
+    /* 子元素选择器 */
+    ul>li{
+        border: 1px green solid;
+    }
+    /* 下一个选择器 */
+    .box3 div+p{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div>div1</div>
+        <p>p1</p>
+        <span>span1</span>
+    </div>
+    <div class="box2">
+        <div class="abc">div1</div>
+        <div class="def">div2</div>
+        <div class="abc def">div3</div>
+        <p class="abc def">p1</p>
+    </div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </li>
+        <li></li>
+    </ul>
+    <div class="box3">
+        <div>div1</div>
+        <p>p1</p>
+        <div>div2</div>
+        <span>span1</span>
+        <p>p2</p>
+        <div>div3</div>
+        <p>p3</p>
+    </div>
+</body>
+</html>
